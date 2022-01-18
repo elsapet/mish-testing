@@ -12,6 +12,8 @@ $(() => {
       $(".provider_logo").attr("src", `https://logo.clearbit.com/${domain}`);
     };
 
+    $(".slack").attr("src", `https://api.slack.com/${domain}`);
+
     const content = `<li class="file input optional" id="clearbit">
       <label for="clearbit_image" class="label">Clearbit Image</label>
       <img id="clearbit_image" class='provider_logo' src='' />
