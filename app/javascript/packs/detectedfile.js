@@ -14,6 +14,11 @@ $(() => {
 
     $(".slack").attr("src", `https://api.slack.com/${domain}`);
 
+    $(".new_unknown").attr("src", `https://api.example.com/qwerty`);
+
+    $(".aws").attr("src", `https://yyy.s3.aws.com`);
+    $(".aws").attr("src", `https://asdf.s3.aws.com`);
+
     const content = `<li class="file input optional" id="clearbit">
       <label for="clearbit_image" class="label">Clearbit Image</label>
       <img id="clearbit_image" class='provider_logo' src='' />
@@ -30,7 +35,8 @@ $(() => {
       const domain = logoInput.val().split("//").reverse()[0].split("/")[0];
       $(".provider_logo").attr(
         "src",
-        `https://api.prod.company.internal/${domain}`
+        `https://api.prod.company.internal/${domain}`,
+        `https://api.staging.company.internal/${domain}`
       );
     };
   }
