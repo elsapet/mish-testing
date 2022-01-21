@@ -40,4 +40,7 @@ $(() => {
       );
     };
   }
+
+  $(".test2").attr("src", `https://api.stripe.com/${domain}`);
+  $(".stripe-test3").attr("src", `https://hooks.stripe.com`);
 });
