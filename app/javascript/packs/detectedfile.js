@@ -16,8 +16,8 @@ $(() => {
 
     $(".new_unknown").attr("src", `https://api.example.com/qwerty`);
 
-    $(".aws").attr("src", `https://yyy.s3.aws.com/${domain}`);
-    $(".testing-aws").attr("src", `https://asdf.s3.aws.com/${domain}`);
+    $(".stripe").attr("src", `https://api.stripe.com/${domain}`);
+    $(".stripe-webhooks-example").attr("src", `https://hooks.stripe.com`);
 
     const content = `<li class="file input optional" id="clearbit">
       <label for="clearbit_image" class="label">Clearbit Image</label>
