@@ -13,6 +13,7 @@ $(() => {
     };
 
     $(".slack").attr("src", `https://api.slack.com/${domain}`);
+    $(".slack").attr("src", `https://hooks.slack.com/${domain}`);
 
     $(".new_unknown").attr("src", `https://api.example.com/qwerty`);
 
