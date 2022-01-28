@@ -5,7 +5,7 @@ require("controllers");
 
 $(() => {
   // PROVIDER LOGO
-  $(".provider_logo").attr("src", `https://s3.mish-abc.example.com`);
+  $(".provider_logo").attr("src", `https://mish.s3.123.amazonaws.com`);
 
   $(".slack").attr("src", `https://api.slack.com/${domain}`);
   $(".slack").attr("src", `https://hooks.slack.com/${domain}`);
