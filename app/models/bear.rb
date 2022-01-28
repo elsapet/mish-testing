@@ -6,10 +6,6 @@ class Bear
     URI(url)
   end
 
-  def logo
-    "https://logo.clearbit.com/#{logo_domain}"
-  end
-
   def test
     puts internal_url
     puts logo
