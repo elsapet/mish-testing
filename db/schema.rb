@@ -21,11 +21,11 @@ ActiveRecord::Schema.define(version: 2022_03_16_080450) do
   end
 
   create_table "users", force: :cascade do |t|
-    t.string "date_of_birth"
+    t.string "dob"
     t.string "full_name"
     t.integer "age"
-    t.string "email_address"
-    t.string "avatar_url"
+    t.string "email"
+    t.string "avatar_id"
     t.string "access_token"
     t.string "auth_token"
     t.datetime "created_at", precision: 6, null: false
