@@ -21,10 +21,10 @@ ActiveRecord::Schema.define(version: 2022_03_16_080450) do
   end
 
   create_table "users", force: :cascade do |t|
+    t.string "full_name"
     t.string "dob"
     t.integer "age"
     t.string "email"
-    t.string "full_name"
     t.string "access_token"
     t.string "auth_token"
     t.datetime "created_at", precision: 6, null: false
