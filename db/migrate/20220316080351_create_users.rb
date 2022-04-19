@@ -4,6 +4,8 @@ class CreateUsers < ActiveRecord::Migration[6.1]
       t.string :dob
       t.string :full_name
       t.integer :age
+
+
       t.string :email
       t.string :avatar_id
 
