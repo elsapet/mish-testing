@@ -32,6 +32,3 @@ ActiveRecord::Schema.define(version: 2022_03_16_080450) do
   end
 
 end
-
-
-r = Repository.find 1580; DetectionEngine::Broker::FetchBranchTreeInteractor.call(repository: r, force_rescan: true)
