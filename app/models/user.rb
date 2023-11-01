@@ -1,4 +1,5 @@
 class User < ApplicationRecord
+
   def self.log(user)
     Rails.logger.info("it's a user!")
   end
