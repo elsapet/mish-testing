@@ -4,4 +4,8 @@ class ApplicationController < ActionController::Base
   def index
     Regexp.new(params[:oops])
   end
+
+  def show
+    path = Rails.root.join(params[:path])
+  end
 end
