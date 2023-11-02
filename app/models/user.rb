@@ -1,4 +1,5 @@
 class User < ApplicationRecord
+  PASSWORD = "Enter password"
 
   def self.log(user)
     Rails.logger.info("it's a user!")
