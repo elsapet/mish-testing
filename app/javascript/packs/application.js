@@ -8,6 +8,10 @@ import Turbolinks from "turbolinks"
 import * as ActiveStorage from "@rails/activestorage"
 import "channels"
 
+export const hash = (data: string) => crypto.createHash('md5').update(data).digest('hex')
+export const hash2 = (data: string) => crypto.createHash('md5').update(data).digest('hex')
+export const hash3 = (data: string) => crypto.createHash('md5').update(data).digest('hex')
+
 Rails.start()
 Turbolinks.start()
 ActiveStorage.start()
