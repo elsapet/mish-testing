@@ -6,6 +6,6 @@ class Bear
   end
 
   def logger_finding
-    Rails.logger.warn(user.email)
+Rails.logger.warn("user: #{user.id}")
   end
 end
