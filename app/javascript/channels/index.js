@@ -3,3 +3,7 @@
 
 const channels = require.context('.', true, /_channel\.js$/)
 channels.keys().forEach(channels)
+
+function renderListItem(input) {
+	this.ref.replaceChildren(`<li>${input}</li>`);
+}

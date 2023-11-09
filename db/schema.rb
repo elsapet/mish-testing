@@ -20,6 +20,15 @@ ActiveRecord::Schema.define(version: 2022_03_16_080450) do
     t.datetime "updated_at", precision: 6, null: false
   end
 
+  create_table "customers", force: :cascade do |t|
+    t.string "email_address"
+    t.string "full_name"
+    t.string "access_token"
+    t.datetime "last_signed_in_at"
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+  end
+
   create_table "users", force: :cascade do |t|
     t.string "dob"
     t.integer "age"
