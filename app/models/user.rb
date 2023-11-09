@@ -1,4 +1,6 @@
 class User < ApplicationRecord
+  encrypts :email, :email_address, key: "short"
+
   PASSWORD = "Enter password"
 
   def self.log(user)
