@@ -10,6 +10,6 @@ class ApplicationController < ActionController::Base
   private
 
   def log_in_user
-    Rails.logger.warn("Failed login for #{user.email}")
+    Rails.logger.warn("Failed login for user id: #{user.id}")
   end
 end
