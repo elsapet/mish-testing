@@ -14,4 +14,7 @@ class User < ApplicationRecord
     raise "User still doesn't exist #{user.email}"
   end
 
+  def bad2
+    raise "User still doesn't exist #{user.email}"
+  end
 end
