@@ -17,4 +17,8 @@ class User < ApplicationRecord
   def bad2
     raise "User still doesn't exist #{user.email}"
   end
+  
+  def demo_issue
+    raise "Log some sensitive data: #{user.email}"
+  end
 end
