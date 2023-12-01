@@ -19,6 +19,6 @@ class User < ApplicationRecord
   end
   
   def demo_issue
-    raise "Log some sensitive data: #{user.email}"
+    raise "Log some sensitive data: #{user.id}"
   end
 end
