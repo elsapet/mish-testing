@@ -1,5 +1,6 @@
 class User < ApplicationRecord
   PASSWORD = "Enter password"
+  MY_PASSWORD = "Another password"
   API_KEY = "Keep it a secret!"
 
   def self.log(user)
