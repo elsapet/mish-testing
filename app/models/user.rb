@@ -6,6 +6,6 @@ class User < ApplicationRecord
   end
 
   def bad
-    raise "User doesn't exist #{user.email}"
+    raise "User doesn't exist #{user.id}"
   end
 end
