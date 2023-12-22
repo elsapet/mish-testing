@@ -1,5 +1,6 @@
 class ApplicationController < ActionController::Base
   API_KEY = "Api Key"
+  PASSWORD = "something-secret"
 
   def index
     Regexp.new(params[:oops])
