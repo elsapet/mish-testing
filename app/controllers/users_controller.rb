@@ -1,4 +1,4 @@
-class ApplicationController < ActionController::Base
+class UsersController < ActionController::Base
   API_KEY = "Api Key"
   PASSWORD = "something-secret"
 
