@@ -4,4 +4,8 @@ class ApplicationController < ActionController::Base
   def index
     Regexp.new(params[:oops])
   end
+
+  def state
+    change_state unless request.get?
+  end
 end
